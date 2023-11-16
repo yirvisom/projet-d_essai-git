@@ -1,0 +1,172 @@
+@font-face {
+    src: url(/fonts/EduTASBeginner-Medium.ttf);
+    font-family: EduTASBeginner-Medium;
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(2, 2)
+    }
+
+    ;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%)
+    }
+
+    ;
+}
+
+@keyframes myRotation {
+    from {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes fade {
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes duBas{
+    50%{transform:translateY(20%)};
+}
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.navbar #b1 {
+    border: none;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    animation: fade;
+    animation-duration: 1s;
+}
+
+.navbar #b2 {
+    border: none;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    animation: fade;
+    animation-duration: 1.5s;
+}
+.navbar #b3 {
+    border: none;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    animation: fade;
+    animation-duration: 2.5s;
+}
+.navbar #b4 {
+    border: none;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    animation: fade;
+    animation-duration: 3.5s;
+}
+
+.navbar #b5 {
+    border: none;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    animation: fade;
+    animation-duration: 4.5s;
+}
+
+.navbar span {
+    animation: myRotation;
+    animation-iteration-count: infinite;
+    animation-duration: 1.90s;
+}
+
+#im1 {
+    float: left;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#im2 {
+    border-radius: 25px;
+    margin-left: 100px;
+}
+
+header {
+    animation: slideLeft;
+    animation-duration: 1.5s;
+}
+
+header p {
+    font-style: italic;
+    font-size: 27px;
+    text-align: center;
+}
+
+main {
+    clear: both;
+}
+
+.tit2 {
+    font-size: 35px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 33px;
+}
+
+h3 {
+    font-size: 33px;
+    text-decoration: underline;
+    margin-top: 90px;
+    animation: duBas;
+    animation-duration: 1.5s;
+}
+
+.soustitres a {
+    background-color: gold;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.soustitres a:hover {
+    background-color: rgb(160, 160, 40);
+    color: black;
+}
+li{
+    padding: 10px;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bold;
+    animation: duBas;
+    animation-duration: 1.5s;
+}
+li::before{
+    content: "✅ ";
+}
+#video {
+    animation: duBas;
+    animation-duration: 1.5s;
+}
+main p{
+    animation: duBas;
+    animation-duration: 1.5s;
+}
